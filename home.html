@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solace Foodhub Home page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Images/HomePage.jpg" type="image/icon type">
+    <style>
+        h1{
+            text-align: center;
+            background-color: rgb(244, 248, 1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .Images {
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .Images img {
+            height: 250px; 
+        }
+        .ImageText{
+            border-radius: 5px;
+            background-color: aqua;
+            text-align: center;
+            padding: 5px; /* Adjust padding as needed */            
+        }
+        .Images td {          
+            vertical-align: top; /* Align content to the top of the cell */
+        }
+        @media (max-width: 600px) {
+            .Images td {
+                width: 33.33%;
+            }
+        }
+    </style>
+    <header class="header">
+        <nav>
+            <ul>            
+                    <a href="index.html"><img src="Images/Logo.png" alt="Error" height="100px"></a>          
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+</head>
+<body class="secondary">
+    <h1>WELCOME TO SOLACE FOODHUB HOME PAGE</h1>
+    <table class="Images">
+        <tr>
+            <td>
+                <div class="Img1">
+                    <img src="Images/Strawberry.jpg" alt="Error">
+                </div>
+                <div class="ImageText">Strawberry Whip<br>62 PESOS</div>
+                <button class="Select" onclick="addToCart(62)">Select</button>
+            </td>
+            <td>
+                <div class="Img2">
+                    <img src="Images/Smors.jpg" alt="Error">
+                </div>
+                <div class="ImageText">Choco Smores <br> 85 PESOS</div>
+                <button class="Select" onclick="addToCart(85)">Select</button>
+            </td>
+            <td>
+                <div class="Img3">
+                    <img src="Images/ChocoBanana.jpg" alt="Error">
+                </div>
+                <div class="ImageText">Choco Banana Whip <br> 67 PESOS</div>
+                <button class="Select" onclick="addToCart(67)">Select</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="Img4">
+                    <img src="Images/Cookies.jpg" alt="Error">
+                </div>
+                <div class="ImageText">Cookies and Cream<br>67 PESOS</div>
+                <button class="Select" onclick="addToCart(67)">Select</button>
+            </td>
+            <td>
+                <div class="Img5">
+                    <img src="Images/YemaChoco.jpg" alt="Error">
+                </div>
+                <div class="ImageText">Yema Fudge & Choco Driz<br>62 PESOS</div>
+                <button class="Select" onclick="addToCart(62)">Select</button>
+            </td>
+        </tr>
+    </table>
+    <button  class="Select" onclick="sendOrderNotification()">Total Order</button>
+    <script src="Script.js"></script>
+    <div class="lower">
+        <a href="FeedBack.html">Feed Back</a>
+        <a href="Termsandcondition.html">Terms and Conditions</a>
+        <a href="https://web.facebook.com/ejiboy.gamlanga">Stay Connected</a>
+    </div>
+</body>
+</html>
